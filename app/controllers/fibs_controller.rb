@@ -1,7 +1,6 @@
 class FibsController < ApplicationController
 
   def index
-    
   end
 
   def fib_sequence
@@ -10,7 +9,7 @@ class FibsController < ApplicationController
     if prime
       result = Fib.fib_prime(input)
     else
-      result = Fib.fib(input)
+      result = Fib.fib(input) if input <= 15 else Fib.fib_iterative(input)
     end
 
 

@@ -1,5 +1,9 @@
 class FibsController < ApplicationController
 
+  def index
+    
+  end
+
   def fib_sequence
     input = params[:user_input].to_i
     prime = params[:prime] == "true" ? true : false

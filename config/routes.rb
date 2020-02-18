@@ -3,4 +3,7 @@ Rails.application.routes.draw do
   resource :fibs do
     get '/fib_result/:user_input/:prime', to: 'fibs#fib_sequence'
   end
+
+  root 'fibs#index'
+
 end
